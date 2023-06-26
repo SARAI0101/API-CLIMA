@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@1,500&display=swap');
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Varela Round', sans-serif;
+    background: #222;
+    background-image: url('https://source.unsplash.com/1600x900/?nature/fog');
+    font-size: 120%;
+}
+
+.card{
+    background: rgba(0, 0, 1, 0.833);
+    color: #ffff;
+    padding: 2em;
+    border-radius: 30px;
+    width: 100%;
+    max-width: 460px;
+    margin: 1em
+}
+
+.search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+button {
+    margin: 0.5em;
+    border-radius: 50%;
+    border: none;
+    height: 40px;
+    width: 40px;
+    outline: none;
+    background: #5854542b;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+  }
+  
+  input.search-bar {
+    border: none;
+    outline: none;
+    padding: 0.4em 1em;
+    border-radius: 24px;
+    background: #5854542b;
+    color: white;
+    font-family: 'Cabin', sans-serif;
+    font-size: 100%;
+    width: calc(100% - 100px);
+  }
+  
+  button:hover {
+    background: #5d5d5d6b;
+  }
+
+  h1.temperature {
+    margin: 0;
+    margin-bottom: 0.4em;
+  }
