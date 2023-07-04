@@ -34,8 +34,8 @@ button {
     margin: 0.5em;
     border-radius: 50%;
     border: none;
-    height: 40px;
-    width: 40px;
+    height: 44px;
+    width: 44px;
     outline: none;
     background: #5854542b;
     color: white;
@@ -51,7 +51,7 @@ button {
     background: #5854542b;
     color: white;
     font-family: 'Cabin', sans-serif;
-    font-size: 100%;
+    font-size: 90%;
     width: calc(100% - 100px);
   }
   
@@ -59,7 +59,36 @@ button {
     background: #5d5d5d6b;
   }
 
-  h1.temperature {
+  h1.temp {
     margin: 0;
-    margin-bottom: 0.4em;
+    margin-bottom: 0.1em;
   }
+
+  .flex {
+    display: flex;
+    align-items: center;
+  }
+  
+  .description {
+    text-transform: capitalize;
+    margin-left: 1px;
+  }
+  
+  .weather.loading {
+    visibility: hidden;
+    max-height: 20px;
+    position: relative;
+  }
+  
+  .weather.loading:after {
+    visibility: visible;
+    content: "Loading...";
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 20px;
+  }
+
+  img {
+    margin-left: -12px;
+}

@@ -9,13 +9,13 @@
   <body>
     <div class="card">
       <div class="search">
-        <input type="text" class="search-bar" placeholder="Search" />
+        <input type="text" class="search-bar" placeholder="Escriba su país o ciudad">
         <button>
           <svg
             stroke="currentColor"
             fill="currentColor"
             stroke-width="0"
-            viewBox="0 0 24 24"
+            viewBox="0 0 22 22"
             height="1.5em"
             width="1.5em"
             xmlns="http://www.w3.org/2000/svg"
@@ -26,15 +26,17 @@
           </svg>
         </button>
       </div>
-      <div class="weather">
+      <div class="weather loading">
         <h2 class="city">El clima en Texas</h2>
-        <h1 class="temperature">40°C</h1>
-        <img src="" alt="" class="icon">
-        <div class="description">Parcialmente Nublado</div>
+        <h1 class="temp">40°C</h1>
+        <div class="flex">
+          <img src="https://openweathermap.org/img/wn/04n.png" alt="" class="icon" />
+          <div class="description">Cloudy</div>
+        </div>
         <div class="humidity">Humedad: 60%</div>
         <div class="wind">Velocidad del Viento: 6.5 km/h</div>
       </div>
     </div>
     <script src="js/index.js"></script>
   </body>
-</html>
+  </html>
