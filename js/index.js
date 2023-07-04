@@ -46,6 +46,5 @@ let weather = {
         weather.search();
       }
     });
-  
-  weather.fetchWeather("Texas");
-  
+
+    weather.fetchWeather("Texas");
