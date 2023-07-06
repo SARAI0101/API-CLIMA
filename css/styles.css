@@ -8,6 +8,7 @@ body{
     height: 100vh;
     margin: 0;
     font-family: 'Varela Round', sans-serif;
+    font-style: italic;
     background: #222;
     background-image: url('https://source.unsplash.com/1600x900/?nature/fog');
     font-size: 120%;
@@ -90,4 +91,8 @@ button {
 
   img {
     margin-left: -12px;
+}
+
+.city-name {
+  color:   rgba(27, 255, 247, 0.789);
 }
