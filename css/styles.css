@@ -96,3 +96,8 @@ button {
 .city-name {
   color:   rgba(27, 255, 247, 0.789);
 }
+
+.space{
+  line-height: 130%;
+}
+
