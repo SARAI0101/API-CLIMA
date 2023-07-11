@@ -9,8 +9,8 @@ let weather = {
       )
         .then((response) => {
           if (!response.ok) {
-            alert("No weather found.");
-            throw new Error("No weather found.");
+            alert("No se encontró información del clima");
+            throw new Error("No se encontró información del clima");
           }
           return response.json();
         })
@@ -21,6 +21,7 @@ let weather = {
       const { icon, description } = data.weather[0];
       const { temp, humidity } = data.main;
       const { speed } = data.wind;
+      const { lat, lon } = data.coord;
       const cityElement = document.querySelector(".city");
       cityElement.innerHTML = "El clima en <span class='city-name'>" + name + "</span>";
       document.querySelector(".icon").src ="https://openweathermap.org/img/wn/" + icon + ".png";
@@ -28,6 +29,8 @@ let weather = {
       document.querySelector(".temp").innerText = temp + "°C";
       document.querySelector(".humidity").innerText ="Humedad: " + humidity + "%";
       document.querySelector(".wind").innerText ="Velocidad del viento: " + speed + " km/h";
+      document.querySelector(".latitude").innerText = "Latitud: " + lat;
+      document.querySelector(".longitude").innerText = "Longitud: " + lon;
       document.querySelector(".weather").classList.remove("loading");
       document.body.style.backgroundImage = "url('https://source.unsplash.com/1600x900/?" + name + "')";
     },
